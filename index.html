@@ -4,7 +4,7 @@
 <head>
 
     <meta charset='utf-8' />
-    <title>İzmir Depremi-30.10.2020</title>
+    <title>İzmir Deprem Sonrası Hasar Durumu</title>
     <meta name="description"
         content="izmir, deprem, earthquake, geocoder,geology, geology map, geological map, harita, interaktif, interactive" />
 
@@ -337,7 +337,7 @@
             },
             onEachFeature: function (feature, layer) {
                 if (feature.properties) {
-                    let content = "Hasar Durumu:" + feature.properties.Name;
+                    let content = "Durum:" + feature.properties.Name;
                     layer.bindPopup(content, {
                         closeButton: true,
                         offset: L.point(0, -1)
