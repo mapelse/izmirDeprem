@@ -338,7 +338,7 @@
         var map = L.map('map', {
             zoom: 12,
             center: [38.45, 27.17],
-            layers: [Esri_WorldImagery, binalar, kamplar]
+            layers: [osm, binalar, kamplar]
 
 
         });
@@ -346,7 +346,6 @@
         var baseLayers = {
             "Uydu Görüntüsü": Esri_WorldImagery,
             "Gri Harita": grayscale,
-            "Topografik": OpenTopoMap,
             "Detaylı": osm
         }
 
