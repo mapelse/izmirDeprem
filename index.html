@@ -95,7 +95,7 @@
             <div class="leaflet-sidebar-pane" id="home">
                 <h1 class="leaflet-sidebar-header">
                     <!-- in case of necessity write a title here such as "Minimize the bar" -->
-                    <p style="font-size: 15px">HARİTAYI GÖRMEK İÇİN PANELİ KÜÇÜLT</p>
+                    <p style="font-size: 13px">HARİTAYI GÖRMEK İÇİN TIKLAYIN</p>
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-right"></i></span>
                 </h1>
 
@@ -344,15 +344,15 @@
         });
 
         var baseLayers = {
-            "Uydu Görüntüsü": Esri_WorldImagery,
-            "Gri Harita": grayscale,
+            "Uydu": Esri_WorldImagery,
+            "Gri": grayscale,
             "Detaylı": osm
         }
 
         var infoLayers = {
 
-            "Binalar": binalar,
-            "Kamplar": kamplar
+            "Bina": binalar,
+            "Kamp": kamplar
 
         }
 
@@ -383,7 +383,8 @@
 
         //Adding all layers and feautes to map
         L.control.layers(baseLayers, infoLayers, {
-            position: "topleft"
+            position: "topleft",
+            collapsed: false
         }).addTo(map);
     </script>
 </body>
